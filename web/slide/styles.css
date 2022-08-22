@@ -1,0 +1,38 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick{
+  margin: 0px 1px;
+  opacity: 0.5;
+  z-index: 0;
+  position: relative;
+  width: 200px;
+  height: 370px;
+  transition-duration: 0.5s;
+  transition-property: all;
+}
+
+.slick.lg{
+  transform: scale(150%, 150%);
+}
+
+.slick.md{
+  transform: scale(125%, 125%);
+}
+
+.slick.sm{
+  transform: scale(100%, 100%);
+}
+
+.slick.active{
+  opacity: 1;
+  z-index: 1;
+  transition-duration: 1s;
+  transition-property: all;
+  transform: scale(200%, 200%);
+}
+
+

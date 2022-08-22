@@ -1,0 +1,316 @@
+<html>
+  <head>
+    <title>Untitled</title>
+    <link rel="stylesheet" href="materialize-slider.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8255532a65.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-[#00000f] lg:mx-20 mx-4">
+    <div class="bg-[#00000f] min-h-screen flex flex-col mx-8 gap-4">
+
+      <div class="bg-black rounded-2xl h-14 mt-4 px-10 grid grid-cols-4 ring-1 ring-gray-900 shadow-sm text-center items-center" id="navbar">
+        <h1 class="flex text-white font-bold uppercase justify-start" id="logo">
+          Logo
+        </h1>
+        <nav class="grid grid-cols-4 col-span-2 justify-items-center justify-center gap-5 justify-self-center" id="nav-items">
+           <a class="hover:text-blue-400 font-medium text-white hover:transition transition" href="home">Início</a>
+           <a class="hover:text-blue-400 font-medium text-white hover:transition transition" href="home">Categorias</a>
+           <a class="hover:text-blue-400 font-medium text-white hover:transition transition" href="home">Sobre</a>
+           <a class="hover:text-blue-400 font-medium text-white hover:transition transition" href="home">Contato</a>
+        </nav>
+        <div class="flex h-7 justify-end" id="search">
+          <input class="text-white px-4 invisible focus:outline-none focus:bg-blue-600 xl:visible bg-slate-900 ring-1 ring-gray-900 rounded-full shadow-inner-md" type="text" id="search" name="search">
+          <svg class="invisible xl:visible text-white absolute transform -translate-x-7 translate-y-0.5 pointer-events-none" style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+          </svg>
+          <button class="xl:invisible text-white align-center hover:text-blue-400">
+            <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="rounded-2xl shadow-sm flex justify-center flex-grow" id="top-slide">
+
+        <div class="carousel">
+          <a class="carousel-item"><img src="slide/res/solo-leveling-2.jpg">
+          <a class="carousel-item"><img src="slide/res/black-clover.png">
+          <a class="carousel-item"><img src="slide/res/chainsaw-man.jpg">
+          <a class="carousel-item"><img src="slide/res/one-punch-man.png">
+          <a class="carousel-item"><img src="slide/res/boku-no-hero.png">
+          <a class="carousel-item"><img src="slide/res/tbate.jpg"></a>
+          <a class="carousel-item"><img src="slide/res/one-piece.jpg"></a>
+        </div>
+        
+      </div>
+
+      <div class="md:visible text-xs md:text-sm lg:text-base flex flex-cols flex-wrap xl:mx-40 xl:flex-nowrap mb-6 my-1 gap-2 md:gap-4 lg:gap-6 align-center items-center justify-center" id="category-buttons">
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Manhwa</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Isekai</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">shonen</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">seinen</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Comédia</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Ação</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Novels</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 text-white font-bold uppercase text-center">Webtoons</button>
+        <button data-tilt class="button-tilt rounded-xl px-5 xl:px-8 ring-1 ring-gray-900 h-12 bg-gradient-to-br from-sky-500 to-indigo-500 transition-all ease-in-out duration-500 hover:transition-all hover:bg-gradient-to-bl text-white font-bold uppercase text-center">Aventura</button>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-10" id="entire-body"> 
+
+        <div class="grid grid-rows-4 col-span-2 gap-2 md:gap-4 lg:gap-5 min-h-screen" id="main">
+
+          <div class="rounded-2xl shadow-sm flex-grow xl:ml-10" id="recent-updated">
+            <div class="flex h-14 rounded-t-2xl ">
+              <h1 class="mx-10 self-center font-bold text-xl text-white border-b-4 pr-52">Atualizados Recentemente</h1>
+            </div>
+
+            <div class="flex flex-wrap ring-1 ring-gray-900 rounded-2xl mx-8 p-6 gap-y-5" id="">
+
+              <div class="manga-img-div mx-5 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+                  <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                    <img class="rounded-xl" src="slide/res/black-clover.png" alt="">
+                  </div>
+                  <div class="flex hoverlay hoverlay-blue rounded-xl">
+                    <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                      <p>Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta...</p>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-md text-blue-500">Black Clover</h1>
+                <h2 class="font-bold text-sm text-white">Cap. 334</h2>
+              </div>
+
+              <div class="manga-img-div mx-5 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+                  <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                    <img class="rounded-xl" src="slide/res/chainsaw-man.jpg" alt="">
+                  </div>
+                  <div class="flex hoverlay hoverlay-blue rounded-xl justify-center text-center">
+                    <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                      <p>Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel...</p>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-md text-blue-500">Chainsaw Man</h1>
+                <h2 class="font-bold text-sm text-white">Cap. 102</h2>
+              </div>
+
+              <div class="manga-img-div mx-5 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+                  <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                    <img class="rounded-xl" src="slide/res/chainsaw-man.jpg" alt="">
+                  </div>
+                  <div class="flex hoverlay hoverlay-blue rounded-xl justify-center text-center">
+                    <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                      <p>Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel...</p>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-md text-blue-500">Chainsaw Man</h1>
+                <h2 class="font-bold text-sm text-white">Cap. 102</h2>
+              </div>
+
+              <div class="manga-img-div mx-5 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+                  <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                    <img class="rounded-xl" src="slide/res/chainsaw-man.jpg" alt="">
+                  </div>
+                  <div class="flex hoverlay hoverlay-blue rounded-xl justify-center text-center">
+                    <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                      <p>Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel...</p>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-md text-blue-500">Chainsaw Man</h1>
+                <h2 class="font-bold text-sm text-white">Cap. 102</h2>
+              </div>
+
+              <div class="manga-img-div mx-5 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+                  <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                    <img class="rounded-xl" src="slide/res/chainsaw-man.jpg" alt="">
+                  </div>
+                  <div class="flex hoverlay hoverlay-blue rounded-xl justify-center text-center">
+                    <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                      <p>Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel...</p>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-md text-blue-500">Chainsaw Man</h1>
+                <h2 class="font-bold text-sm text-white">Cap. 102</h2>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="rounded-2xl shadow-sm xl:ml-10" id="new-added">
+            <div class="flex h-14 rounded-t-2xl ">
+              <h1 class="mx-10 self-center font-bold text-xl text-[#f1f1f1] border-b-4 pr-52">Novos Adicionados</h1>
+            </div>
+
+            <div class="grid grid-cols-4 grid-flow-row auto-rows-max ring-1 ring-gray-900 rounded-2xl mx-6" id="box">
+              <div class="manga-img-div m-10 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
+                <div class="transition manga-img-div-inner align-center flex flex-row justify-center">
+                  <img class="rounded-xl" src="slide/res/black-clover.png" alt="">
+                </div>
+                <div class="flex hoverlay hoverlay-blue rounded-xl">
+                  <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                    <p>Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta...</p>
+                  </div>
+                </div>
+                <h1 class="font-extrabold mt-2 text-sm text-blue-500">Black Clover</h1>
+                <h2 class="font-medium text-xs text-white">Cap. 334</h2>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
+        <div class="min-h-screen rounded-2xl shadow-sm xl:mr-10 mb-10 items-center" id="side-panel">
+
+          <h1 class="text-[#f1f1f1] text-center text-3xl font-bold antialiased uppercase mb-6 pb-2 border-b-4 border-[#f1f1f1]">Mais lidos</h1>
+          <div class="flex flex-wrap justify-center gap-6" id="top-manga-list">
+
+            <div class="manga-img-div flex flex-col rounded-2xl bg-yellow-600" id="card-star">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/solo-leveling-2.jpg" alt="">
+              <div class="flex hoverlay hoverlay-gold hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>Dez anos atrás, depois do "Portal" que conecta o mundo real com um mundo de montros se abriu, algumas pessoas comuns receberam o poder de caçar os monstros do portal. Eles são conhecidos como caçadores...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">Solo Leveling</h1>
+                <p>TOP #1</p>
+              </div>
+            </div>
+
+            <div class="manga-img-div flex flex-col rounded-2xl bg-gray-500" id="card-star" id="star-item">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/black-clover.png" alt="">
+              <div class="flex hoverlay hoverlay-silver hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">Black Clover</h1>
+                <p>TOP #2</p>
+              </div>
+            </div>
+            
+            <div class="manga-img-div flex flex-col rounded-2xl bg-amber-900" id="card-star">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/one-piece.jpg" alt="">
+              <div class="flex hoverlay hoverlay-bronze hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>One Piece começa quando Gol D. Roger, o Rei Dos Piratas que possuiu tudo nesse mundo, antes de ser executado, diz que escondeu o seu tesouro em algum lugar da Grand Line, um oceano extremamente perigoso...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">One Piece</h1>
+                <p>TOP #3</p>
+              </div>
+            </div>
+
+            <div class="manga-img-div flex flex-col rounded-2xl bg-blue-900" id="card-star">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/chainsaw-man.jpg" alt="">
+              <div class="flex hoverlay hoverlay-dark-blue hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">Chainsaw Man</h1>
+                <p>TOP #4</p>
+              </div>
+            </div>
+
+            <div class="manga-img-div flex flex-col rounded-2xl bg-blue-900" id="card-star">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/one-punch-man.png" alt="">
+              <div class="flex hoverlay hoverlay-dark-blue hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>Conta o dia-a-dia de um herói normal que está infeliz por ser forte o bastante para derrotar todos os seus oponentes com apenas um soco, já que isso não lhe traz mais a sensação de adrenalina ao enfrentar um inimigo poderoso...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">One Punch Man</h1>
+                <p>TOP #5</p>
+              </div>
+            </div>
+
+            <div class="manga-img-div flex flex-col rounded-2xl bg-blue-900" id="card-star">
+              <img class="rounded-t-2xl h-[300px]" src="slide/res/boku-no-hero.png" alt="">
+              <div class="flex hoverlay hoverlay-dark-blue hoverlay-star justify-center text-center">
+                <div class="manga-img-text self-end font-medium" id="manga-img-text">
+                  <p>A série conta a história de Midoriya Izuku, um garoto tímido e fraco cujo sonho é ser um herói. O problema é que ele vive num mundo repleto de pessoas com super poderes, mas ele mesmo não tem poder algum...</p>
+                </div>
+              </div>
+              <div class="m-2 text-center text-white" id="text">
+                <h1 class="font-bold">Boku No Hero</h1>
+                <p>TOP #6</p>
+              </div>
+            </div>
+
+          </div>
+
+          <h1 class="text-[#f1f1f1] text-center text-3xl font-bold antialiased uppercase mb-10 pb-2 border-b-4 border-[#f1f1f1] mt-6">Rank Scans</h1>
+          <div class="flex flex-col justify-center gap-4" id="top-scan-list">
+            <div class="grid grid-cols-3 grid-rows-2 rounded-xl" id="top-scan-item">
+              <img src="slide/res/black-clover.png" class="row-span-2 rounded-l-xl rounded-b-xl h-[280px]" alt="">
+
+              <div class="flex flex-col col-span-2 row-span-2">
+                <div class="bg-blue-800 h-12 rounded-r-xl text-center align-center items-center">
+                  <h1 class="m-2 self-center text-white font-bold text-lg">Random Scans</h1>
+                </div>
+                <div class="flex absolute transform -translate-x-56 -translate-y-5 rounded-full bg-yellow-600 h-[80px] w-[80px] text-center justify-center align-center items-center text-white font-extrabold shadow-sm text-4xl">
+                  #1
+                </div>
+                <div class="flex flex-grow">
+                  <img src="" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="materialize.js"></script>
+    <script src="tilt.jquery.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          indicators: true,
+          numVisible: 7,
+          duration: 500,
+          dist: -100,
+        });
+          setInterval(function(){
+            $('.carousel').carousel('next');
+          }, 5000);
+      });
+
+      $('.manga-img-tilt').tilt({
+          glare: true,
+          maxGlare: .2
+      })
+
+    </script>
+
+  </body>
+</html>

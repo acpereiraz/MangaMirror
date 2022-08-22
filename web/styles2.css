@@ -1,0 +1,57 @@
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel{
+  position: relative;
+  height: 900px;
+  perspective: 0px;
+}
+
+.carousel .carousel-item p{
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0.5em;
+  opacity: 0.8;
+}
+
+.carousel .carousel-item{
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.carousel .carousel-item img{
+  max-width: 300px;
+  width: 300px;
+  height: 500px;
+}
+
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: magenta;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: green;
+  inherits: false;
+}
+
+button {
+  /* Optional: change initial value of the variables */
+  /* --myColor1: #f64; --myColor2: brown; */
+
+  background: linear-gradient(var(--myColor1), var(--myColor2));
+  transition: --myColor1 3s, --myColor2 3s;
+}
+
+button:hover {  
+  --myColor1: #f00;
+  --myColor2: yellow;
+}

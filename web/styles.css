@@ -1,0 +1,106 @@
+.carousel{
+  margin-top: 0px;
+  position: relative;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  perspective: 1500px;
+}
+
+.carousel .carousel-item p{
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0.5em;
+  opacity: 0.8;
+}
+
+.carousel .carousel-item{
+  align-self: top;
+  align-items: center;
+  min-height: 0px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-top: -160px;
+}
+
+.carousel .carousel-item img{
+  align-self: center;
+  align-items: center !important;
+  min-height: 0px;
+  max-width: 300px;
+  width: 300px;
+  height: 500px;
+}
+
+#top-slide{
+  max-height: 600px;
+}
+
+.carousel .carousel-item:not(.active) img{
+  opacity: 0.75;
+  transition: all 1s;
+}
+
+.carousel .active img{
+  opacity: 1 !important;
+  transition: all 1s ease-in-out;
+}
+
+.manga-img-div, .manga-img-div .manga-img-tilt {
+  width: 200px;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.manga-img-div img, .manga-img-tilt img, .manga-img-div .hoverlay, .manga-img-div .manga-img-tilt .hoverlay {
+  width: 200px;
+  height: 300px;
+}
+
+.manga-img-div .manga-img-text, .manga-img-div .manga-img-tilt .manga-img-text {
+  color: white;
+  margin: 15px;
+  font-size: 12px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.manga-img-div .hoverlay, .manga-img-div .manga-img-tilt .hoverlay{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.25s ease-in-out;
+}
+
+.manga-img-div .hoverlay-blue, .manga-img-tilt .hoverlay-blue{
+  background: linear-gradient(transparent 10%, #3B82F6);
+}
+
+.manga-img-div .hoverlay-gold{
+  background: linear-gradient(transparent 10%, #CA8A04);
+}
+
+.manga-img-div .hoverlay-silver{
+  background: linear-gradient(transparent 10%, #6B7280);
+}
+
+.manga-img-div .hoverlay-bronze{
+  background: linear-gradient(transparent 10%, #78350F);
+}
+
+.manga-img-div .hoverlay-dark-blue{
+  background: linear-gradient(transparent 10%, #1E3A8A);
+}
+
+.manga-img-div .hoverlay-star{
+  transform: translateY(0px);
+}
+
+
+.manga-img-div:hover .hoverlay, .manga-img-tilt:hover .hoverlay {
+  visibility: visible;
+  opacity: 1;
+}
+
