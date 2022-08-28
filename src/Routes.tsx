@@ -9,7 +9,7 @@ export function AppRoutes(){
 	return(
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/MangaMirror-web/" element={<Home />} />
       </Routes>
     </Router>
   )
