@@ -1,5 +1,3 @@
-import React from "react";
-
 const NewAdded = () => {
   return(
     <div className="rounded-2xl shadow-sm xl:ml-10" id="new-added">

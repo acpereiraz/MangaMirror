@@ -1,5 +1,3 @@
-import React from "react";
-
 const TopList = () => {
   return(
     <div className="min-h-screen rounded-2xl shadow-sm xl:mr-10 mb-10 items-center" id="side-panel">

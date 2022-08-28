@@ -1,5 +1,3 @@
-import React from "react";
-
 const CategoryButtons = () => {
   return (
     <div className="md:scale-90 text-xs md:text-sm lg:text-base flex flex-cols flex-wrap xl:mx-40 xl:flex-nowrap md:mb-3 md:mt-[-3px] mb-6 my-1 gap-2 lg:gap-6 align-center items-center justify-center" id="category-buttons">

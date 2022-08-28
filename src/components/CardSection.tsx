@@ -1,4 +1,3 @@
-import React, { useCallback } from "react";
 import { MangaChapter, UnrankedCard} from "./sub-components/UnrankedCard";
 
 type CardSectionProps = {

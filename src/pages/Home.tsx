@@ -1,9 +1,6 @@
-import React from "react";
 import Carousel from "../components/Carousel";
 import CategoryButtons from "../components/CategoryButtons";
 import NavBar from "../components/NavBar";
-import NewAdded from "../components/NewAdded";
-import RecentUpdated from "../components/CardSection";
 import TopList from "../components/TopList";
 import CardSection from "../components/CardSection";
 import { MangaChapter } from "../components/sub-components/UnrankedCard";
