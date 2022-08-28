@@ -4,7 +4,7 @@ const Carousel = () => {
 
   return (
 
-    <div className="rounded-2xl md:scale-75 md:my-[-60px] sm:scale-75 shadow-sm flex justify-center flex-grow" id="top-slide">
+    <div className="rounded-2xl bg-white md:scale-75 md:my-[-60px] sm:scale-75 shadow-sm flex justify-center flex-grow" id="top-slide">
         <div className="carousel">
           <a className="carousel-item"><img src="/assets/imgs/solo-leveling-2.jpg"></img></a>
           <a className="carousel-item"><img src="/assets/imgs/black-clover.png"></img></a>
