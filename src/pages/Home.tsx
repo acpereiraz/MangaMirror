@@ -12,38 +12,38 @@ export default function Home() {
       {
         title: "Chainsaw Man",
         chapterNumber: 102,
-        image: "/assets/imgs/chainsaw-man.jpg",
+        image: "assets/imgs/chainsaw-man.jpg",
         resume: "Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel..."
       },
       
       {
         title: "Black Clover",
         chapterNumber: 334,
-        image: "/assets/imgs/black-clover.png",
+        image: "assets/imgs/black-clover.png",
         resume: "Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta..."
       },
       {
         title: "Black Clover",
         chapterNumber: 334,
-        image: "/assets/imgs/black-clover.png",
+        image: "assets/imgs/black-clover.png",
         resume: "Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta..."
       },
       {
         title: "Black Clover",
         chapterNumber: 334,
-        image: "/assets/imgs/black-clover.png",
+        image: "assets/imgs/black-clover.png",
         resume: "Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta..."
       },
       {
         title: "Black Clover",
         chapterNumber: 334,
-        image: "/assets/imgs/black-clover.png",
+        image: "assets/imgs/black-clover.png",
         resume: "Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta..."
       },
       {
         title: "Black Clover",
         chapterNumber: 334,
-        image: "/assets/imgs/black-clover.png",
+        image: "assets/imgs/black-clover.png",
         resume: "Em um mundo em que até as tarefas mais simples do dia a dia são feitas com o uso de magia, quem não consegue usá-la é tratado como nada! Esta é a vida de Asta..."
       },
     ]
