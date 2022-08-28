@@ -8,7 +8,7 @@ const NewAdded = () => {
       <div className="grid grid-cols-4 grid-flow-row auto-rows-max ring-1 ring-gray-900 rounded-2xl mx-6" id="box">
         <div className="manga-img-div m-10 align-center row-span-2 flex flex-col justify-center text-center" id="manga-img-div">
           <div className="transition manga-img-div-inner align-center flex flex-row justify-center">
-            <img className="rounded-xl" src="/assets/imgs/black-clover.png" alt=""></img>
+            <img className="rounded-xl" src="assets/imgs/black-clover.png" alt=""></img>
           </div>
           <div className="flex hoverlay hoverlay-blue rounded-xl">
             <div className="manga-img-text self-end font-medium" id="manga-img-text">
