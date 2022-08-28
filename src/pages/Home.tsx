@@ -18,6 +18,7 @@ export default function Home() {
         image: "/assets/imgs/chainsaw-man.jpg",
         resume: "Quando seu pai morreu, Denji ficou preso com uma dívida que era incapaz de pagar. Mas graças à ajuda de um cachorro demônio que ele salvou chamado Pochita, Denji é capaz de sobreviver como caçador de demônios de aluguel..."
       },
+      
       {
         title: "Black Clover",
         chapterNumber: 334,
