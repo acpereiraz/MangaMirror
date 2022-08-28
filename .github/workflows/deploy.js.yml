@@ -5,9 +5,8 @@ name: Vite Build Deploy
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: 
+      - "main"
 
 jobs:
   build:
