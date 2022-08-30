@@ -1,14 +1,7 @@
 import React from "react";
+import { MangaChapter } from "types/MangaChapter.types";
 
-export type MangaChapter = {
-  id?: number;
-  title: string;
-  chapterNumber: number;
-  image: string;
-  resume: string;
-};
-
-export const UnrankedCard = (props: MangaChapter) => {
+export const MangaCard = (props: MangaChapter) => {
   return(
     <div className="
         unrankedcard-container
