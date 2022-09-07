@@ -1,7 +1,8 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { MangaChapter } from "types/MangaChapter.types";
 
 export const MangaCard = (props: MangaChapter) => {
+
   return(
     <div className="
         unrankedcard-container
@@ -14,7 +15,7 @@ export const MangaCard = (props: MangaChapter) => {
         align-center row-span-2
         flex flex-col
         justify-center text-center" id="manga-img-div">
-      <div className="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt>
+      <Link className="manga-img-tilt rounded-xl align-center flex flex-col justify-center text-center" data-tilt to={"m/1"}>
         <div className="transition manga-img-div-inner align-center flex flex-row justify-center">
           <img className="rounded-xl" src={props.image} alt=""></img>
         </div>
@@ -35,7 +36,7 @@ export const MangaCard = (props: MangaChapter) => {
             <p>{props.resume}</p>
           </div>
         </div>
-      </div>
+      </Link>
       <h1 className="font-extrabold mt-2 lg:text-[14px] xl:text-md text-blue-500">{props.title}</h1>
       <h2 className="font-bold lg:text-xs xl:text-sm text-white">Cap. {props.chapterNumber}</h2>
     </div>

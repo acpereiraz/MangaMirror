@@ -5,6 +5,8 @@ import TopList from "../components/TopMangas";
 import CardSection from "../components/CardSection";
 import { MangaChapter } from "types/MangaChapter.types";
 import TopScans from "components/TopScans";
+import { Manga } from "types/Manga";
+import { Outlet } from "react-router-dom";
 
 export default function Home() {
 
@@ -115,10 +117,11 @@ export default function Home() {
         <NavBar />
         <Carousel />
         <CategoryButtons />
+        <Outlet />
         <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-10" id="entire-body">
           <div className="flex flex-col col-span-2 gap-2 md:gap-4 lg:gap-5 min-h-screen" id="main">
-            <CardSection title="Atualizados Recentemente" callback={getRecentlyUpdated} />
-            <CardSection title="Novos Adicionados" callback={getNewlyAdded}/>
+            <CardSection pageTitle="Atualizados Recentemente" callback={getRecentlyUpdated} />
+            <CardSection pageTitle="Novos Adicionados" callback={getNewlyAdded}/>
           </div>
           <div className="min-h-screen rounded-2xl shadow-sm xl:mr-10 mb-10 items-center" id="side-panel">
             <TopList callback={getTopMangas}/>
@@ -126,7 +129,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
