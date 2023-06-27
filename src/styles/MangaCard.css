@@ -1,0 +1,61 @@
+@media (min-width: 768px){
+    .manga-img-div, .manga-img-div .manga-img-tilt {
+        width: 200px;
+        border-radius: 20px;
+        transform-style: preserve-3d;
+      }
+      
+      .manga-img-div .hoverlay, .manga-img-div .manga-img-tilt .hoverlay {
+        width: 200px;
+        height: 300px;
+      }
+      
+      .manga-img-div .manga-img-text, .manga-img-div .manga-img-tilt .manga-img-text {
+        color: white;
+        margin: 15px;
+        font-size: 12px;
+        text-shadow: 1px 1px 5px #000;
+      }
+      
+      .unrankedcard-container .manga-img-tilt .manga-img-text {
+        text-shadow: 1px 1px 5px #000;
+      }
+      
+      .unrankedcard-container .hoverlay, .manga-img-div .hoverlay, .manga-img-div .manga-img-tilt .hoverlay{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.25s ease-in-out;
+      }
+      
+      .unrankedcard-container .hoverlay-blue, .manga-img-div .hoverlay-blue, .manga-img-tilt .hoverlay-blue{
+        background: linear-gradient(transparent 10%, #3B82F6);
+      }
+      
+      .manga-img-div .hoverlay-gold{
+        background: linear-gradient(transparent 10%, #CA8A04);
+      }
+      
+      .manga-img-div .hoverlay-silver{
+        background: linear-gradient(transparent 10%, #6B7280);
+      }
+      
+      .manga-img-div .hoverlay-bronze{
+        background: linear-gradient(transparent 10%, #78350F);
+      }
+      
+      .manga-img-div .hoverlay-dark-blue{
+        background: linear-gradient(transparent 10%, #1E3A8A);
+      }
+      
+      .manga-img-div .hoverlay-star{
+        transform: translateY(0px);
+      }
+      
+      
+      .manga-img-div:hover .hoverlay, .manga-img-tilt:hover .hoverlay {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+}

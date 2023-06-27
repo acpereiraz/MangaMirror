@@ -113,12 +113,20 @@ export default function Home() {
 
   return (
     <div className="bg-[#00000f] md:mx-4">
-      <div className="bg-[#00000f] min-h-screen flex flex-col mx-8 gap-4">
+      <div className="bg-[#00000f] min-h-screen flex flex-col mx-2 md:mx-8 gap-4">
+
+        <div className="h-2/3 w-screen absolute z-0 left-0">
+          <div className="relative w-full h-full">
+            <img src="assets/imgs/bg.png" className="w-full h-full z-30 opacity-30"></img>
+            <div className="w-full h-2/3 z-20 absolute bottom-0 bg-gradient-to-t from-[#00000f] to-transparent"></div>
+          </div>
+        </div>
+
         <NavBar />
         <Carousel />
         <CategoryButtons />
         <Outlet />
-        <div className="grid grid-cols-3 gap-2 md:gap-4 lg:gap-10" id="entire-body">
+        <div className="md:grid md:grid-cols-3 gap-2 md:gap-4 lg:gap-10" id="entire-body">
           <div className="flex flex-col col-span-2 gap-2 md:gap-4 lg:gap-5 min-h-screen" id="main">
             <CardSection pageTitle="Atualizados Recentemente" callback={getRecentlyUpdated} />
             <CardSection pageTitle="Novos Adicionados" callback={getNewlyAdded}/>
