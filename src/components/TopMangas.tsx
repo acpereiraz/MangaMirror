@@ -7,11 +7,16 @@ type TopListProps = {
 }
 
 const TopList = (props: TopListProps) => {
+
   const MangasList:MangaChapter[] = props.callback();
+
   return(
     <div>
-      <h1 className="text-[#f1f1f1] text-center text-3xl font-bold antialiased uppercase mb-6 pb-2 border-b-4 border-[#f1f1f1]">Mais lidos</h1>
-      <div className="flex flex-wrap justify-center gap-6" id="top-manga-list">
+      <div className="flex w-full justify-center text-center items-center">
+        <h1 className="text-[#f1f1f1] w-2/3 text-xl font-bold subpixel-antialiased uppercase mb-6 pb-2 border-b-4 border-[#f1f1f1]">Mais lidos</h1>
+      </div>
+      <div className="flex flex-wrap justify-center gap-4" id="top-manga-list">
+
         {MangasList.map(manga => {
           let color:RankColor;
           switch (manga.rank) {
@@ -39,21 +44,26 @@ const TopList = (props: TopListProps) => {
                 name: "dark-blue"
               }
           }
+
           return(
-            <Link className={`manga-img-div flex flex-col rounded-2xl ${color.code}`} id="card-star" key={Math.random()} to={"m/1"}>
-              <img className="rounded-t-2xl h-[300px]" src={manga.image} alt=""></img>
-              <div className={`flex hoverlay hoverlay-${color.name} hoverlay-star justify-center text-center`}>
-                <div className="manga-img-text self-end font-medium" id="manga-img-text">
-                  <p>{manga.resume}</p>
+            <Link className={`manga-img-div flex flex-col rounded-xl overflow-hidden  ${color.code}`} id="card-star" key={Math.random()} to={"m/1"}>
+
+                <div id="manga-card" className="text-white w-full w-[350px] h-[125px] overflow-hidden">
+
+                  <div className="flex justify-start h-full w-full gap-2 bg-opacity-80">
+                      <img className="h-full w-[150px]" src={manga.image} alt=""></img>
+                      <div className="h-full flex flex-col text-ellipsis p-2 overflow-hidden">
+                        <span className="flex gap-2"><h1 className="font-semibold">{manga.title}</h1> <span>-</span> <h2>#{manga.rank}</h2></span>
+                        <p className="text-[10.5px] h-full text-ellipsis pb-2 overflow-hidden">{manga.resume}</p>
+                      </div>
+                  </div>
+
                 </div>
-              </div>
-              <div className="m-2 text-center text-white" id="text">
-                <h1 className="font-bold">{manga.title}</h1>
-                <p>TOP #{manga.rank}</p>
-              </div>
+
             </Link>
           );
         })}
+
       </div>
     </div>
   );

@@ -1,13 +1,7 @@
 @media (min-width: 768px){
     .manga-img-div, .manga-img-div .manga-img-tilt {
-        width: 200px;
         border-radius: 20px;
         transform-style: preserve-3d;
-      }
-      
-      .manga-img-div .hoverlay, .manga-img-div .manga-img-tilt .hoverlay {
-        width: 200px;
-        height: 300px;
       }
       
       .manga-img-div .manga-img-text, .manga-img-div .manga-img-tilt .manga-img-text {

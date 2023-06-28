@@ -14,7 +14,7 @@ const CardSection = (props: CardSectionProps) => {
       <div className="flex h-14 rounded-t-2xl">
         <h1 className="lg:mx-10 self-center font-bold text-xl text-white border-b-4">{props.pageTitle}</h1>
       </div>
-      <div className={`flex flex-wrap ${justify} ring-1 ring-gray-900 rounded-2xl gap-y-4 p-4 md:mx-8 md:p-6 md:gap-y-5`} id="">
+      <div className={`flex flex-wrap ${justify} ring-2 ring-blue-900 rounded-2xl gap-y-4 gap-x-4 p-2 md:p-2 md:gap-y-5`} id="">
 
         {mangas.map(manga => {
           const key = Math.random()

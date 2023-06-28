@@ -112,10 +112,10 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#00000f] md:mx-4">
-      <div className="bg-[#00000f] min-h-screen flex flex-col mx-2 md:mx-8 gap-4">
+    <div className="bg-[#00000f]">
+      <div className="bg-[#00000f] min-h-screen flex flex-col mx-2 lg:mx-4 xl:mx-8 gap-4">
 
-        <div className="h-2/3 w-screen absolute z-0 left-0">
+        <div className="h-2/3 w-screen absolute z-0 left-0 pointer-events-none">
           <div className="relative w-full h-full">
             <img src="assets/imgs/bg.png" className="w-full h-full z-30 opacity-30"></img>
             <div className="w-full h-2/3 z-20 absolute bottom-0 bg-gradient-to-t from-[#00000f] to-transparent"></div>
@@ -126,14 +126,14 @@ export default function Home() {
         <Carousel />
         <CategoryButtons />
         <Outlet />
-        <div className="md:grid md:grid-cols-3 gap-2 md:gap-4 lg:gap-10" id="entire-body">
-          <div className="flex flex-col col-span-2 gap-2 md:gap-4 lg:gap-5 min-h-screen" id="main">
+        <div className="md:grid md:grid-cols-3 gap-2 md:gap-4 lg:gap-6 xl:gap-8 z-10" id="entire-body">
+          <div className="flex flex-col col-span-2 gap-2 md:gap-4 lg:gap-5 mb-4 md:mb-0" id="main">
             <CardSection pageTitle="Atualizados Recentemente" callback={getRecentlyUpdated} />
             <CardSection pageTitle="Novos Adicionados" callback={getNewlyAdded}/>
           </div>
-          <div className="min-h-screen rounded-2xl shadow-sm xl:mr-10 mb-10 items-center" id="side-panel">
+          <div className="rounded-2xl shadow-sm xl:mr-10 mb-10 items-center" id="side-panel">
             <TopList callback={getTopMangas}/>
-            <TopScans />
+            {/* <TopScans /> */}
           </div>
         </div>
       </div>

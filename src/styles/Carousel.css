@@ -37,7 +37,7 @@
 
 #top-slide{
   max-height: 600px;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .carousel .carousel-item:not(.active) img{

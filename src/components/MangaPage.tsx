@@ -17,7 +17,7 @@ const MangaPage = () => {
   const id = useParams();
   const manga = getManga(id)
   return (
-    <div>
+    <div className="z-20">
       <Link className='fixed inset-0 bg-black backdrop-blur-[4px] bg-opacity-75 z-10 transition-opacity cursor-default' to={'/MangaMirror-web/'}>
       </Link>
       <div className="modal-bg fixed inset-0 
